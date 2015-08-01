@@ -8,6 +8,7 @@ virtualenv wgetbot
 cd wgetbot
 git clone https://github.com/k4ml/wgetbot.git
 cd wgetbot
+../bin/pip install -r requirements.txt
 ../bin/python main.py <BOT TOKEN>
 ```
 
