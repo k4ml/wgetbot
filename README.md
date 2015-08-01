@@ -6,7 +6,7 @@ Simple bot to fetch web page. Just to learn implementing Telegram Bot.
 ```
 virtualenv wgetbot
 cd wgetbot
-git clone
+git clone https://github.com/k4ml/wgetbot.git
 cd wgetbot
 ../bin/python main.py <BOT TOKEN>
 ```
