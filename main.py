@@ -11,6 +11,8 @@ import requests
 import telegram
 import html2text
 
+from telegram.forcereply import ForceReply
+
 def get(param):
     offset = 0
     length = None
@@ -56,7 +58,7 @@ def main(token):
                 if text:
                     output = get(text)
                     try:
-                        bot.sendMessage(chat_id=chat_id, text=output)
+                        bot.sendMessage(chat_id=chat_id, text=output, reply_markup=ForceReply())
                     except Exception as e:
                         print e
                         bot.sendMessage(chat_id=chat_id, text='Error')
